@@ -1,0 +1,62 @@
+.services {
+    background-image: linear-gradient(to right, rgba($color__two, 1), rgba($color__one, 0.8));
+    clip-path: polygon(15% 22%, 93% 22%, 100% 34%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0 0);
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+
+    main {
+        // TEXT INTRO
+        .text__intro {
+            position: relative;
+            width: 400px;
+            height: 80px;
+            border-radius: 50px;
+            background-color: $color__white;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 700px;
+                height: 1px;
+                background-color: $color__white;
+                right: -700px;
+            }
+
+            & > h2 {
+                font-family: $font-popp;
+                font-size: 1.5rem;
+                color: lighten($color__black, 30%);
+            }
+        }
+        // CONTENT
+        .content {
+            margin-top: 4rem;
+            // ITEM
+            .item {
+                width: 32%;
+                height: 350px;
+                padding: 1rem;
+                background-color: $color__white;
+                margin-bottom: 2rem;
+                // ICON
+                .icon {
+                    font-size: 3rem;
+                    color: lighten($color__black, 30%);
+                }
+                // TITLE
+                .title {
+                    margin: 1rem 0;
+                    font-size: 1.1rem;
+                    color: lighten($color__black, 30%);
+                    font-family: $font-popp;
+                }
+                // INFO
+                .info {
+                    color: lighten($color__black, 30%);
+                    line-height: 1.6;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

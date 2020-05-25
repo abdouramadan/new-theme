@@ -1,0 +1,93 @@
+.latest__news {
+    background-image: linear-gradient(to right, rgba($color__two, 1), rgba($color__one, 0.8));
+    clip-path: polygon(15% 22%, 93% 22%, 100% 34%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0 0);
+    padding-top: 15rem;
+    padding-bottom: 2rem;
+
+    main {
+        // TEXT INTRO
+        .text__intro {
+            position: relative;
+            width: 400px;
+            height: 80px;
+            border-radius: 50px;
+            background-color: $color__white;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 700px;
+                height: 1px;
+                background-color: $color__white;
+                right: -700px;
+            }
+
+            &>h2 {
+                font-family: $font-popp;
+                font-size: 1.5rem;
+                color: lighten($color__black, 30%);
+            }
+        }
+
+        // CONTENT
+        .content {
+            margin-top: 4rem;
+
+            // ITEM
+            .item {
+                width: 32%;
+                height: 460px;
+                background-color: $color__light;
+                margin-bottom: 2rem;
+                position: relative;
+
+                // news image
+                .news__img {
+                    width: 100%;
+                    height: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                    }
+                }
+
+                // news info
+                .news__info {
+                    padding: 1rem;
+
+                    h3 {
+                        font-size: 1.1rem;
+                        line-height: 1.6;
+                        color: rgba($color__dark, 0.9);
+                    }
+
+                    p {
+                        margin: 1rem 0;
+                        line-height: 1.5;
+                        color: rgba($color__dark, 0.9);
+                    }
+
+                    span {
+                        color: rgba($color__one, 0.999);
+                        i {
+                            margin-right: 0.6rem;
+                        }
+                    }
+                }
+
+                // author info
+                .author__info {
+                    padding: 1rem;
+                    color: $color__dark;
+                    border-top: 1px solid rgba($color__dark, 0.3);
+
+                    i {
+                        margin-right: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

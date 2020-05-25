@@ -1,0 +1,96 @@
+.header__wrapper {
+    height: 105vh;
+    background-color: $color__white;
+    // MAIN HEADER
+    .main__header {
+        height: 100vh;
+        clip-path: polygon(50% 0%, 100% 0, 100% 50%, 100% 100%, 91% 100%, 83% 82%, 13% 82%, 0 62%, 0 0);
+        background-image: linear-gradient(to right, rgba($color__two, 0.7), rgba($color__one, 0.7)), url('../img/home-pattern.jpg');
+        background-size: cover;
+        overflow: visible;
+
+        // MAIN NAVBAR
+        .main__navbar {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba($color__white, 0.1);
+
+            // LOGO
+            .logo {
+                font-size: 1.4rem;
+                color: $color__one;
+                font-family: $font-popp;
+                clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0 50%);
+                background-color: $color__white;
+                width: 100px;
+                height: 50px;
+            }
+
+            // NAVBAR LIST
+            .navbar__list {
+
+                // NAV LINK
+                .nav__link {
+                    font-size: 1.1rem;
+                    margin-left: 1rem;
+                    color: $color__white;
+                }
+            }
+        }
+
+        // HERO SECTION
+        .hero {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            // TEXT HERO 
+            .text__hero {
+
+                &>h1 {
+                    font-weight: bold;
+                    font-family: $font-popp;
+                    line-height: 1.5;
+                    color: rgba($color__white, 0.9);
+                }
+
+                // BUTTONS
+                .buttons {
+                    margin-top: 1rem;
+
+                    // LINK
+                    .link {
+                        width: 170px;
+                        height: 50px;
+                        border-radius: 30px;
+                        background-color: rgba($color__two__light, 0.9);
+                        margin-left: 1rem;
+                        color: $color__white;
+
+                        &:last-of-type {
+                            background-color: rgba($color__white, 0.9);
+                            color: lighten($color__black, 30%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SOCAIL LINKS
+    .socail__links {
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba($color__one, 0.8);
+        background-image: linear-gradient(to right, rgba($color__two, 0.8), rgba($color__one, 0.8));
+        width: 400px;
+        height: 70px;
+        border-radius: 50px;
+        // LINK
+        .link {
+            font-size: 1.5rem;
+            color: $color__white;
+            margin-left: 1.5rem;
+        }
+    }
+}

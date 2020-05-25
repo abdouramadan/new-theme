@@ -1,0 +1,242 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: $font-muli;
+    letter-spacing: 0.8px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+// TEXT INTRO
+
+// MARGINS
+.m__auto {
+    margin: 0 auto;
+}
+
+.m__left__auto {
+    margin-left: auto;
+}
+
+.m__right__auto {
+    margin-right: auto;
+}
+
+// FONTS
+
+.font__bold {
+    font-weight: bold;
+}
+
+.font__normal {
+    font-weight: normal;
+}
+
+.font__italic {
+    font-style: italic;
+}
+
+// DISPLAYS
+.d__flex {
+    display: flex;
+}
+
+.d__block {
+    display: block;
+}
+
+.d__inline {
+    display: inline;
+}
+
+.d__inline__flex {
+    display: inline-flex;
+}
+
+.d__inline__block {
+    display: inline-block;
+}
+
+// COMMON USED FLEX PROPERITIES
+.flex__center__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex__center__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex__between__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__between__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__wrap {
+    flex-wrap: wrap;
+}
+
+// FLEX - DIRECTION
+.flex__row {
+    flex-direction: row;
+}
+
+.flex__col {
+    flex-direction: column;
+}
+
+//FLEX - JUSTIFY - CONTENT
+.justify__between {
+    justify-content: space-between;
+}
+
+.justify__center {
+    justify-content: center;
+}
+
+.justify__around {
+    justify-content: space-around;
+}
+
+.justify__end {
+    justify-content: flex-end;
+}
+
+.justify__start {
+    justify-content: flex-start;
+}
+
+// FLEX - ALIGN - ITEMS
+.align__between {
+    align-items: space-between
+}
+
+.align__around {
+    align-items: space-around;
+}
+
+.align__center {
+    align-items: center;
+}
+
+.align__start {
+    align-items: flex-start;
+}
+
+.align__end {
+    align-items: flex-end;
+}
+
+// TYPOGRAPHY
+.text__cap {
+    text-transform: capitalize;
+}
+
+.text__upper {
+    text-transform: uppercase;
+}
+
+.text__center {
+    text-align: center;
+}
+
+.text__left {
+    text-align: left;
+}
+
+.text__right {
+    text-align: right;
+}
+
+.text__justify {
+    text-align: justify;
+}
+
+// POSITIONING
+.po__rel {
+    position: relative;
+}
+
+.po__abs {
+    position: absolute;
+}
+
+.po__fix {
+    position: fixed;
+}
+
+// FLOATING
+.float__left {
+    float: left;
+}
+
+.float__right {
+    float: right;
+}
+
+.clear__fix {
+    clear: both;
+    display: table;
+}
+
+// OVERFLOW
+.overflow__hidden {
+    overflow: hidden;
+}
+
+.overflow__visible {
+    overflow: visible;
+}
+
+.overflow__auto {
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

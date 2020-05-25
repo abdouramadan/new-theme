@@ -1,0 +1,89 @@
+.about__us {
+    background-color: $color__white;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+
+    main {
+        // ABOUT IMAGE
+        .about__image {
+            width: 50%;
+            height: 400px;
+            background-color: $color__black;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                left: -30px;
+                bottom: -30px;
+                background-color: $color__two;
+                background-image: linear-gradient(to right, rgba($color__two, 0.8), rgba($color__one, 0.8));
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+                top: 0;
+                left: 0;
+                background-color: $color__black;
+                opacity: 0.1;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                position: relative;
+            }
+
+            .title {
+                top: 50%;
+                right: 0;
+                z-index: 5;
+                background-color: $color__white;
+                color: lighten($color__black, 20%);
+                width: 160px;
+                height: 60px;
+                transform: translateY(-50%);
+                font-size: 1.3rem;
+            }
+        }
+
+        // ABOUT INFO
+        .about__info {
+            width: 50%;
+            padding-left: 2rem;
+
+            h2 {
+                font-size: 2rem;
+                font-family: $font-popp;
+                line-height: 1.3;
+                color: lighten($color__black, 20%);
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: lighten($color__black, 40%);
+                margin-bottom: 1.3rem;
+            }
+
+            .download {
+                width: 180px;
+                height: 50px;
+                border-radius: 30px;
+                background-color: $color__two__light;
+                color: $color__white;
+                font-size: 1.1rem;
+
+                .lni {
+                    margin-right: 0.6rem;
+                }
+            }
+        }
+    }
+}
